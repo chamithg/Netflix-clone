@@ -1,0 +1,37 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row_posters {
+  display: flex; /*make the vertical column horizontal*/
+  overflow-y: hidden; /* This hides the exess of horizontal list. keep the title in the center.*/
+  overflow-x: scroll; /* Add a scrollbar*/
+  padding: 20px; /*super importat ---  after the list transformed to scroll, the scaling effect only zoom the image WITHIN THE Frame, donot
+  increse the size of the frame, adding a padding is the only way to get rid of it */
+}
+
+.row_posters::-webkit-scrollbar {
+  /*this will hide the scrollbar*/
+  display: none;
+}
+
+.row_poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms; /* controls the speed of the hover effect*/
+}
+
+.row_poster:hover {
+  transform: scale(1.08); /* increse the size when hovering*/
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09); /* increse the size when hovering*/
+}

@@ -1,0 +1,30 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 25px;
+
+  /* animation ---> two lines below add gradual fading effect to all transitions on the nav bar. */
+  transition-timing-function: ease-in-out;
+  transition: all 01s;
+}
+.nav_black {
+  background-color: rgba(24, 23, 23, 0.8);
+}
+
+.nav_logo {
+  position: fixed;
+  left: 20px;
+  height: 30px;
+  object-fit: contain; /*this will keep the original aspect ratio on any change.*/
+}
+
+.avatar {
+  position: fixed;
+  right: 20px;
+  height: 30px;
+  object-fit: contain; /*this will keep the original aspect ratio on any change.*/
+}
